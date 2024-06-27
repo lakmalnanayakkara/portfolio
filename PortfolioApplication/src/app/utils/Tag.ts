@@ -8,6 +8,8 @@ export class Tag {
   static readonly TYPESCRIPT = new Tag('TypeScript', 'red');
   static readonly MONGODB = new Tag('MongoDB', 'green');
   static readonly MYSQL = new Tag('MySQL', 'gray');
+  static readonly MSSQL = new Tag('MSSQL', 'red');
+  static readonly EXPRESS = new Tag('ExpressJS', 'black');
 
   private constructor(
     private readonly key: string,
