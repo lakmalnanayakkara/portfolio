@@ -1,60 +1,65 @@
-<div class="container">
-  <div class="row">
-    <div class="col-lg shadow border m-1">
-      <div class="text-center">
-        <h2>About Me</h2>
-        <img
-          src="../../assets/P99.png"
-          width="256"
-          height="256"
-          class="rounded-circle"
-        />
-        <p class="paragraph">
-          I am a passionate and dedicated Full Stack Engineer with a strong
-          foundation in computer science principles and hands-on experience in
-          coding, debugging, and developing software solutions. With proficiency
-          in languages such as Java, Python, and JavaScript, I am adept at
-          problem-solving and eager to contribute to innovative projects. My
-          academic background, combined with internships and personal projects,
-          has equipped me with a solid understanding of software development
-          life cycles, version control systems, and collaborative tools. I
-          thrive in dynamic environments and am committed to continuous learning
-          and growth in the field of software engineering. My goal is to
-          leverage my skills to create efficient, scalable, and user-friendly
-          software that makes a positive impact.
-        </p>
-      </div>
-    </div>
-    <div class="col-lg shadow border m-1">
-      <div class="text-center">
-        <h2>Featured Projects</h2>
-        <h4>{{ project.name }}</h4>
-      </div>
-      <carousel>
-        <div *ngFor="let image of project.images">
-          <slide
-            ><img
-              src="{{ image }}"
-              alt=""
-              style="display: block; width: 100%; border: 1px solid black"
-          /></slide>
-        </div>
-      </carousel>
-      <p class="mt-2">{{ project.summary }}</p>
-      <hr />
-      <div class="d-flex flex-wrap">
-        <div *ngFor="let technology of project.technologies">
-          <div
-            class="tag me-2 mb-1"
-            [style.background-color]="technology.color"
-          >
-            {{ technology }}
+<div class="container-image">
+  <div>
+    <div class="container">
+      <div class="row">
+        <div class="col-lg shadow border m-4 bg-white">
+          <div class="text-center">
+            <h2>About Me</h2>
+            <img
+              src="../../assets/P99.png"
+              width="256"
+              height="256"
+              class="rounded-circle"
+            />
+            <p class="paragraph">
+              I am a passionate and dedicated Full Stack Engineer with a strong
+              foundation in computer science principles and hands-on experience
+              in coding, debugging, and developing software solutions. With
+              proficiency in languages such as Java, Python, and JavaScript, I
+              am adept at problem-solving and eager to contribute to innovative
+              projects. My academic background, combined with internships and
+              personal projects, has equipped me with a solid understanding of
+              software development life cycles, version control systems, and
+              collaborative tools. I thrive in dynamic environments and am
+              committed to continuous learning and growth in the field of
+              software engineering. My goal is to leverage my skills to create
+              efficient, scalable, and user-friendly software that makes a
+              positive impact.
+            </p>
           </div>
         </div>
+        <div class="col-lg shadow border m-4 bg-white">
+          <div class="text-center">
+            <h2>Featured Projects</h2>
+            <h4>{{ project.name }}</h4>
+          </div>
+          <carousel>
+            <div *ngFor="let image of project.images">
+              <slide
+                ><img
+                  src="{{ image }}"
+                  alt=""
+                  style="display: block; width: 100%; border: 1px solid black"
+              /></slide>
+            </div>
+          </carousel>
+          <p class="mt-2">{{ project.summary }}</p>
+          <hr />
+          <div class="d-flex flex-wrap">
+            <div *ngFor="let technology of project.technologies">
+              <div
+                class="tag me-2 mb-1"
+                [style.background-color]="technology.color"
+              >
+                {{ technology }}
+              </div>
+            </div>
+          </div>
+          <p class="text-center mt-5 fw-bold fst-italic">
+            *** Visit the Portfolio section for more...!!!***
+          </p>
+        </div>
       </div>
-      <p class="text-center mt-5 fw-bold fst-italic">
-        *** Visit the Portfolio section for more...!!!***
-      </p>
     </div>
   </div>
 </div>

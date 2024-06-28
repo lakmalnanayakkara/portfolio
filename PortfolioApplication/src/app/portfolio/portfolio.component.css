@@ -1,0 +1,6 @@
+.container-image {
+  background-image: url("../../assets/backgrounds/portfolio-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}

@@ -5,3 +5,11 @@ accordion-group::ng-deep .btn-link {
 accordion-group::ng-deep .card-header {
   background-color: #007bff;
 }
+
+.container-image {
+  background-image: url("../../assets/backgrounds/resume-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  min-height: 75vh;
+}

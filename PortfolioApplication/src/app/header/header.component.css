@@ -1,4 +1,28 @@
-.jumbotron {
+/* .jumbotron {
   padding: 2rem 1rem;
   background-color: #e9ecef;
+} */
+
+.jumbotron {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-align: center;
+  background: linear-gradient(45deg, #2c3e50, #4ca1af, #bdc3c7, #2c3e50);
+  padding: 2rem 1rem;
+  animation: gradientAnimation 5ms ease infinite;
+}
+
+@keyframes gradientAnimation {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
 }

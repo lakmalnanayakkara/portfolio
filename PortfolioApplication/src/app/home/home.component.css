@@ -3,3 +3,10 @@
   text-justify: inter-word;
   margin-top: 20px;
 }
+
+.container-image {
+  background-image: url("../../assets/backgrounds/home-background.jpg");
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
