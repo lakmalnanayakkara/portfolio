@@ -11,5 +11,5 @@ accordion-group::ng-deep .card-header {
   background-size: cover;
   background-position: center;
   background-repeat: no-repeat;
-  min-height: 75vh;
+  min-height: 100vh;
 }
